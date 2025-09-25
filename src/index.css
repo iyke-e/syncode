@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+.page-heading {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .page-heading {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.section-heading {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 1.875rem;
+  }
+}
+
+:root {
+  --padding-inline: 1rem; /* Default value for mobile */
+}
+
+@media (min-width: 768px) {
+  /* Tablet */
+  :root {
+    --padding-inline: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+  :root {
+    --padding-inline: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  /* Desktop */
+  :root {
+    --padding-inline: 6rem;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.radial-gradient {
+  width: 476px;
+  height: 476px;
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    rgba(27, 64, 179, 12%),
+    rgb(27, 64, 179, 0%) 40% 70%
+  );
+  border-radius: 50%;
+  left: -191px;
+  top: 310px;
+}
+
+@media (min-width: 1280px) {
+  .blog-container {
+    & > :nth-child(3) {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      display: grid;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@keyframes infiniteScroll {
+  0% {
+    translate: 0;
+  }
+
+  100% {
+    translate: calc(-50% - 16px) 0;
+
+    @media (min-width: 1024px) {
+      translate: calc(50% - 55px);
+    }
+  }
+}
