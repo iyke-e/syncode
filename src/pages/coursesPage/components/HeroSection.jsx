@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HeroSection = () => {
   return (
@@ -12,7 +12,7 @@ const HeroSection = () => {
           </div>
           <div className="lg:w-1/2 lg:pl-8">
             <p className="text-lg text-gray-600">
-              Welcome to ACME Tech Training, where we turn your passion for
+              Welcome to TechUni Tech Training, where we turn your passion for
               technology into expertise. Our comprehensive training programs are
               designed to equip you with the skills needed to thrive in the
               digital age. Whether you're a beginner looking to break into the

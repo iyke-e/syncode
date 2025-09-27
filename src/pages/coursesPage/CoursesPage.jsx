@@ -1,5 +1,5 @@
-import HeroSection from './components/HeroSection';
-import CourseSection from './components/CourseSection';
+import HeroSection from "./components/HeroSection";
+import CourseSection from "./components/CourseSection";
 const CoursesPage = () => {
   return (
     <div>

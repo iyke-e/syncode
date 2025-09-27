@@ -12,12 +12,12 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed z-50 shadow-lg bg-white py-2 md:py-4 w-screen">
+    <nav className="sticky top-0 z-50 shadow-lg bg-white py-2 md:py-4">
       <div className="px-4 flex flex-row items-center justify-between gap-4 w-full max-w-[1280px] mx-auto">
         {/* Logo */}
         <div className="flex-none">
           <Link to="/">
-            <img src={Logo} alt="ACME Software Lab Logo" />
+            <img className="w-12" src={Logo} alt="TechUni   Logo" />
           </Link>
         </div>
 
@@ -90,7 +90,7 @@ const Navbar = () => {
         <div className="flex flex-col gap-6">
           {/* Modal Header */}
           <div className="flex justify-between items-center gap-2 relative">
-            <img src={Logo} alt="ACME Software Lab Logo" className="" />
+            <img src={Logo} alt="TechUni   Logo" className="" />
             <button
               className="absolute top-0 right-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

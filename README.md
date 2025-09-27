@@ -1,10 +1,9 @@
-# ACME CAPSTONE PROJECT
+# TechUni CAPSTONE PROJECT
 
-This repository serves as the capstone project developed during the internship program at ACME Software Lab.
+This repository serves as the capstone project developed during the internship program at TechUni .
 
 ## Frameworks and Tools
 
 - React
 - Tailwind CSS
 - React Router
-
