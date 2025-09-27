@@ -19,8 +19,6 @@ const router = createBrowserRouter([
             { index: true, element: <LandingPage /> },
             { path: "about", element: <AboutUs /> },
             { path: "contact", element: <ContactUs /> },
-            { path: "login", element: <Login /> },
-            { path: "signup", element: <Signup /> },
             { path: "courses-overview", element: <CourseLandingPage /> },
             { path: "courses", element: <CoursesPage /> },
             { path: "courses/:courseId", element: <CourseDetailsPage /> },
